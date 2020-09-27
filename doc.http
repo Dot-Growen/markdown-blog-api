@@ -1,0 +1,9 @@
+### Test Login
+POST http://127.0.0.1:8000/dj-rest-auth/login/
+Content_Type: application/json
+
+{
+    "username": "admin",
+    "email": "admin@test.com",
+    "password": "admin",
+}
