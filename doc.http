@@ -1,9 +1,24 @@
 ### Test Login
-POST http://127.0.0.1:8000/dj-rest-auth/login/
-Content_Type: application/json
+POST http://localhost:8000/dj-rest-auth/login/
+Content-Type: application/json
 
 {
     "username": "admin",
-    "email": "admin@test.com",
-    "password": "admin",
+    "password": "bigL20**"
 }
+
+### Test registration
+POST http://localhost:8000/dj-rest-auth/registration/
+Content-Type: application/json
+
+{
+    "username": "testuser3",
+    "email": "test3@test.com",
+    "password1": "bigL20**",
+    "password2": "bigL20**"
+}
+
+### Test Fetch post list
+GET http://localhost:8000/api/posts/
+Content-Type: application/json
+

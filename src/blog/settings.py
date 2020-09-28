@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'dj_rest_auth.registration',
 
     'corsheaders',
+    'posts',
 ]
 
 MIDDLEWARE = [
@@ -130,16 +131,14 @@ AUTHENTICATION_BACKENDS = [
 SITE_ID = 1
 ACCOUNT_EMAIL_VERIFICATION = 'none'
 
-
-
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [
-        'rest_framework.authentication.TokenAuthentication'
+        'rest_framework.authentication.TokenAuthentication',
     ]
 }
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3080",
+    "http://localhost:3000",
 ]
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
